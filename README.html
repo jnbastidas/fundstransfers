@@ -1,65 +1,58 @@
-<!DOCTYPE html>
-<html>
-<body style="font-size: 16px;">
-  <pre>
-    # Funds Transfers
-    Java application capable of transferring funds between two savings accounts based on some business rules.
+# Funds Transfers
+Java application capable of transferring funds between two savings accounts based on some business rules.
 
 
-    <b>Running the FundsTransfers app locally:</b>
+<b>Running the FundsTransfers app locally:</b>
 
-    PREREQUISITES
+PREREQUISITES
 
-    First, download the Java 11 Development Kit: either the official Oracle JDK or Open JDK.</br>
+First, download the Java 11 Development Kit: either the official Oracle JDK or Open JDK.</br>
 
-    Steps
+Steps
 
-    1. INSTALL fundstransfers Application
+1. INSTALL fundstransfers Application
 
-      a) After you have unzip the fundstransfers.zip file, keep note of the location.</br>
-      c) At the command line for your operating system, change your directory to where the source was unzip and entry to "/fundstransfers/" folder. Build the project:
+  a) After you have unzip the fundstransfers.zip file, keep note of the location.</br>
+  c) At the command line for your operating system, change your directory to where the source was unzip and entry to "/fundstransfers/" folder. Build the project:
 
-      For Windows:
-        
-          » gradlew.bat clean
-          » gradlew.bat build
-      
-      For MacOs:
-      
-          » ./gradlew clean
-          » ./gradlew build
-          
+  For Windows:
 
-    3. START APP (Java gradle app)
+      » gradlew.bat clean
+      » gradlew.bat build
 
-      In the same directory to the previous step, from the command line execute:
+  For MacOs:
 
-      For Windows:
-      
-          » gradlew.bat run
+      » ./gradlew clean
+      » ./gradlew build
 
-      For MacOs:
-      
-          » ./gradlew run
-      
-      
-      Once this has finished, you can use the url <a href='http://localhost:8080/ping' target='_blank'>http://localhost:8080/ping</a> to verify the correct work, the service should response "pong"
-      
-      Please import the file <a href='Funds_Transfers.postman_collection.json' target='_blank'>Funds_Transfers.postman_collection.json</a> with the <a href='https://www.postman.com/' target='_blank'>Postman app</a> to test the endpoints.
 
-      To access the H2 Database, you can use the url: <a href='http://localhost:8080/h2' target='_blank'>http://localhost:8080/h2</a>
-        JDBC URL : jdbc:h2:mem:fundstransfersdb
-        User Name: sa
-        Password :
-      
-      
-      <b>Key Features and Technologies</b>
-      
-    Spring Framework: It provides numerous features, including dependency injection and transaction control.<br/>
-    H2 Database: embedded with Spring Boot
-    Lombok library: It is a java library that let us add getter, setters, equals, hashcode, fully featured builder, automate your logging variables, and much more to a class with one annotation.
+3. START APP (Java gradle app)
 
-    Multi-tier architecture: Persistence tier, service tier, and controller tier.
-  </pre>
-</body>
-</html>
+  In the same directory to the previous step, from the command line execute:
+
+  For Windows:
+
+      » gradlew.bat run
+
+  For MacOs:
+
+      » ./gradlew run
+
+
+  Once this has finished, you can use the url <a href='http://localhost:8080/ping' target='_blank'>http://localhost:8080/ping</a> to verify the correct work, the service should response "pong"
+
+  Please import the file <a href='Funds_Transfers.postman_collection.json' target='_blank'>Funds_Transfers.postman_collection.json</a> with the <a href='https://www.postman.com/' target='_blank'>Postman app</a> to test the endpoints.
+
+  To access the H2 Database, you can use the url: <a href='http://localhost:8080/h2' target='_blank'>http://localhost:8080/h2</a>
+    JDBC URL : jdbc:h2:mem:fundstransfersdb
+    User Name: sa
+    Password :
+
+
+  <b>Key Features and Technologies</b>
+
+Spring Framework: It provides numerous features, including dependency injection and transaction control.<br/>
+H2 Database: embedded with Spring Boot
+Lombok library: It is a java library that let us add getter, setters, equals, hashcode, fully featured builder, automate your logging variables, and much more to a class with one annotation.
+
+Multi-tier architecture: Persistence tier, service tier, and controller tier.
